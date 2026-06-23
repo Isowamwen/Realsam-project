@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+  }
+
+
+.reviews{
+  display: flex;
+  justify-content: center;
+  padding:clamp(2.4rem, 6vw, 4rem) 0;
+  width:100%;
+  
+}
+
+.reviews-container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap:4rem;
+}
+
+.reviews-header{
+  font-family: roboto flex;
+  font-weight: 600;
+  font-style: semibold;
+  font-size:  clamp(2rem, 3vw, 3.6rem);
+  color: rgba(20, 20, 20, 1);
+}
+
+.reviews-testimonials{
+  display:flex;
+  justify-content:space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  gap:2.5rem;
+}
+
+.reviewers-container1, .reviewers-container2, .reviewers-container3, .reviewers-container4{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: linear-gradient( to bottom right, rgba(196, 196, 196, 0.05), rgba(255, 255, 255, 1) );
+  width:100%;
+  backdrop-filter: blur(4px);
+  box-shadow:   rgba(0, 0, 0, 0.25);
+  border: 2px solid rgba(245, 245, 245, 1);
+  border-radius: 24px;
+  padding: clamp(1rem, 2vw, 2rem);
+  gap:2rem;
+}
+
+.reviewers-txt{
+  font-family:inter ;
+  font-size: 1.5rem;
+  font-style:regular;
+  font-weight:400 ;
+  color:rgba(20, 20, 20, 1);
+}
+
+.reviewer-profile{
+  display: grid;
+  grid-template-columns: 60px 1fr ;
+}
+
+.profile-pics-container{
+  width:50px;
+  height: 50px;
+  border-radius:50%;
+  
+}
+
+.profile-pics{
+  width: 100%;
+  height:100%;
+  border-radius:50%;
+  object-fit: cover;
+}
+
+.reviewers-details{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap:0.5rem;
+}
+
+.name{
+  font-family: inter;
+  font-weight: 600;
+  font-style: semi bold;
+  font-size: 1.4rem;
+  color:rgba(20, 20, 20, 1);
+}
+
+.work, .company{
+  font-family: inter;
+  font-weight: 400;
+  font-style: regular;
+  font-size: 1.4rem;
+  color:rgba(107, 107, 107, 1);
+}
+
+.review-txt-btn{
+  font-family: inter;
+  font-weight: 600;
+  font-style: semi bold;
+  font-size: 1.5rem;
+  color:rgba(5, 5, 5, 1);
+}
+
+.btn-tertiary{
+  background-color: transparent;
+  position:relative;
+  padding:4px 0;
+  cursor:pointer;
+}
+
+.btn-tertiary::after{
+  content:'';
+  position: absolute;
+  width:100%;
+  height:2px;
+  bottom: 0;
+  left:0; 
+  /* position: absolute; bottom: 0; left: 0; width: 100%; height: 2px — places a full-width line at the bottom of the button*/
+  background-color: rgba(5, 5, 5, 1);
+  transform:scaleX(0);
+  /*hides the line by  squishing it flat*/
+  transform-origin:left;
+  /* controls where the animation starts from (left, center, or right)*/
+  transition: transform 0.3s ease-out;
+  /*animates the reveal smoothly*/
+}
+
+.btn-tertiary:hover::after{
+  transform: scaleX(1);
+    /*triggers the animation on hover*/
+  transform-origin: bottom left;
+}
+.review-txt-btn:active{
+  color:lightseagreen ;
+}
+
+.btn-tertiary:active::after{
+  background-color: lightseagreen ;
+}
+
+
+@media (max-width: 1290px){
+  .reviewers-container4{
+    display: none;
+  }
+}
+
+@media (max-width: 900px){
+  .reviewers-container3{
+    display: none;
+  }
+}
+
+@media (max-width: 650px){
+
+  .reviews{
+    padding: 0 2.4rem;
+  }
+  .reviews-testimonials{
+    flex-direction: column;
+  }
+}

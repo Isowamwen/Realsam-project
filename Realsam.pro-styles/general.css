@@ -1,0 +1,38 @@
+html{
+        font-size: 62.5%; 
+      }
+
+      /* {
+        box-sizing: border-box;
+        margin: 0;
+        padding:0;
+        outline: 1px solid red !important;
+      }*/
+
+      .body{
+        margin:0;
+        padding:0;
+        font-family: inter;
+        font-size: 1.6rem;
+        font-weight: 400;
+        overflow-x: hidden;   
+        background-color: rgba(252, 252, 252, 1);  
+      }
+
+      .main_container{
+        overflow-x: hidden;
+        width:100%;
+      }
+
+      button{
+        border:none;
+
+      }
+
+
+      section{
+        padding: clamp(4.8rem, 6vw, 6.4rem) clamp(2.4rem, 6vw, 3.8rem);
+        display:flex;
+        width: 100%;
+        max-width: var(--container-max-width--);
+      }

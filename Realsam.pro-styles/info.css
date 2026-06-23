@@ -1,0 +1,140 @@
+*{
+        box-sizing: border-box;
+        margin: 0;
+        padding:0;
+}
+
+.sam-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding:5rem clamp(2.4rem, 6vw, 3.8rem);
+  width:100%;
+}
+
+.sam-info-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  width: 50%;
+}
+.sam-info-heading{
+  font-family: Roboto Flex;
+  font-weight: 600;
+  font-size: clamp(2rem, 3vw, 3.6rem);
+  color: rgba(20, 20, 20, 1);
+}
+
+.sam-info-description{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  font-family: inter;
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-style: regular;
+  
+}
+
+.work-experience-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: 50%;
+}
+
+.work-experience-heading{
+  font-family: Roboto Flex;
+  font-weight: 500;
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  color: rgba(20, 20, 20, 1);
+}
+
+.work-experience-description{
+  font-family: inter;
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-style: regular;
+  color: rgba(107, 107, 107, 1);
+}
+
+.work-experience-list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  
+}
+
+.work-experience-item{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  
+  
+}
+
+.date{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.company-details{
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.company-logo{
+  width:25px;
+  object-fit: cover;
+}
+
+.date span{
+  font-family:inter;
+  font-weight: 400;
+  font-style: regular;
+  font-size:1.4rem;
+  color: rgba(107, 107, 107, 1);
+}
+
+.details h3{
+  font-family: inter;
+  font-weight: 400;
+  font-size:1.6rem;
+  font-style:regular;
+  color:rgba(20, 20, 20, 1);
+}
+
+.company-details{
+  font-family: inter;
+  font-size:1.6rem;
+  font-weight: 400;
+  font-style: regular;
+  color:rgba(20, 20, 20, 1);
+}
+
+@media (max-width: 768px){
+  .sam-info-container{
+    width:100%;
+  }
+
+  .work-experience-container{
+    width:100%;
+  }
+
+  .work-experience-list{
+    width:100%;
+  }
+
+}
