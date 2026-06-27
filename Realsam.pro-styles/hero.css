@@ -86,8 +86,12 @@
   font-family: inter;
   font-weight: 500;
   font-size: 1.4rem;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
+  cursor: pointer;
 }
+.btn-primary:active{
+    opacity:0.4;
+  }
 
 
 @media (max-width: 768px) {
